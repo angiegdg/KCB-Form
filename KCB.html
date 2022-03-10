@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+	<style>
+		body{
+
+			font-family: Arial; 
+			background-color: #9c9c9c; 
+			box-sizing: border-box;
+
+		}
+
+		form{
+			background-color: white;
+			border: 3px solid;
+                        box-shadow: 0 0 5px 5px lightgrey;
+			border-radius: 3px;
+			border-color: #4286F4;
+			color: #808080;
+			font-size: 0.8em;
+			padding: 20px;
+			margin: 0 auto;
+			width: 450px;
+		}
+
+		input, textarea{
+			border: 0;
+			outline: none;
+
+			width: 427px;
+		}
+
+		h3{
+
+			color: #4286F4;
+			text-align: center;
+			font-family: 'Montserrat';
+
+		}
+
+		h5{
+
+			color: #555555;
+			text-align: center;
+			font-family: 'Montserrat';
+
+		}
+
+		hr {
+  		background-color: #4286F4;
+		}
+
+		img{
+			display:block;
+			margin:auto;
+		}
+
+		.recaptcha{
+
+			display:block;
+			margin:auto;
+		}
+
+		.field{
+			border: solid 1px #ccc;
+			padding: 10px;
+		}
+
+		.field:focus{
+			border-color: #4286F4;
+		}
+
+		.center-content{
+			text-align: center;
+		}
+
+		.two-group{
+		display: flex;
+		width: 100%;
+		}
+
+		.two-fields {
+		  width:100%;
+		}
+		.two-fields .input-group {
+		  width:86%;
+		}
+		.two-fields input {
+		  width:80% !important;
+		}
+
+	.btn{
+	border-radius: 3px;
+	display: inline-block;
+	padding: 20px 15px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+	display:block;
+	margin:auto;
+	}
+
+	.btn-blue{
+		color: white;
+		background-color: #4286F4;
+	}
+	.btn-blue:hover{
+		background-color: #393C40;	
+	}
+	.btn-blue:active{
+		background-color: #4286F4;
+	}
+
+	</style>
+</head>
+<body>
+
+
+			<form name="insightly_web_to_lead" action="https://crm.na1.insightly.com/WebToLead/Create" method="post"><input type="hidden" name="formId" value="f0NdCTz+R8UQ0Hbv/KpnAQ==" />			
+			<br />
+			<img src="https://www.kcbathremodel.com/uploads/1/0/3/4/103493982/kcbr-new-logo-2019-small.png" alt="KCBR" width="101" height="74"><br />
+			<br />
+			<h3>CONTACT US - WE'LL GET BACK TO YOU QUICKLY!</h3><br />
+			<hr><br />
+			<h5>All fields marked with * are required and must be filled.</h5>
+			<br /><br />
+            <input type="hidden" name="formId" value="f0NdCTz+R8UQ0Hbv/KpnAQ==" /><label for="insightly_firstName">First Name: </label><br /><input id="insightly_firstName" name="FirstName" type="text" class="field" /><br /><br />
+            <label for="insightly_lastName">Last Name: </label><br /><input id="insightly_lastName" name="LastName" type="text" class="field" /><br /><br />
+            <label for="email">Email: </label><br /><input id="insightly_Email" name="email" type="text" class="field" /><br /><br />
+            <label for="phone">Phone: </label><br /><input id="insightly_Phone" name="phone" type="text" class="field" /><br /><br />
+            <label for="AddressStreet">Address (# and Street): </label><br /><input id="insightly_AddressStreet" name="AddressStreet" type="text" class="field" /><br /><br />
+            <label for="AddressState">State: </label><br /><input id="insightly_AddressState" name="AddressState" type="text" class="field" /><br /><br />
+            
+            <div class="two-group two-fields">
+				<div><label for="AddressCity">City: </label><br /><input id="insightly_AddressCity" name="AddressCity" type="text" class="field"><br /><br /></div>
+				<div><label for="AddressPostCode">Postal Code: </label><br /><input id="insightly_AddressPostalCode" name="AddressPostCode" type="text" class="field"></div>
+            </div>
+
+            <br />
+            <label for="insightly_Home_Project_Type__c">Home Project Type:</label>
+            <select id="insightly_Home_Project_Type__c" name="Home_Project_Type__c" value="Bathroom Remodel" class="field" style="width:70%">
+                <option selected="" value="Bathroom Remodel">Bathroom Remodel</option>
+                <option value="Basement Remodel">Basement Remodel</option>
+                <option value="Kitchen Remodel">Kitchen Remodel</option>
+                <option value="Main Floor Remodel">Main Floor Remodel</option>
+            </select>
+            <br />
+            <br />
+            <label for="insightly_Anticipated_Budget__c">Anticipated Budget:</label>
+            <select id="insightly_Anticipated_Budget__c" name="Anticipated_Budget__c" value="$15,000 - $25,000" class="field" style="width:70%" >
+                <option selected="" value="$15,000 - $25,000">$15,000 - $25,000</option>
+                <option value="$25,000 - $35,000">$25,000 - $35,000</option>
+                <option value="$35,000 - $45,000">$35,000 - $45,000</option>
+                <option value="$45,000 - $55,000">$45,000 - $55,000</option>
+                <option value="$55,000 - $75,000">$55,000 - $75,000</option>
+                <option value="$75,000+">$75,000+</option>
+            </select>
+            <br />
+            <br />
+            <label for="insightly_Comments__c">Comments:</label><br /><textarea id="insightly_Comments__c" name="Comments__c" class="field"></textarea><br /><br />
+            <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="2005717" /><input type="hidden" id="insightly_LeadSource" name="LeadSource" value="3478348" /><input type="submit" value="Submit" class="btn btn-blue" />
+            <br />
+            <br />
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+			<div class="g-recaptcha" data-sitekey="6LepxMceAAAAABpg6zowGpNFCUIIwvLzBThs31R_"></div>
+			
+        </form>
+</body>
+</html>
